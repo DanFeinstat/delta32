@@ -73,6 +73,7 @@ nav {
 
 .vid-title:hover {
   color: #aaa;
+  cursor: pointer;
 }
 
 .vid-title:hover::after,
