@@ -3,6 +3,7 @@ application = new ZiggeoApi.V2.Application({
 });
 
 $(function() {
+  console.log("go");
   token = $(".vid-title").attr("value");
 
   var video = $(
