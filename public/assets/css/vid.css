@@ -8,6 +8,7 @@ body {
 
 h2,
 h1,
+h3,
 label {
   font-family: "Oswald", sans-serif;
 }
@@ -84,4 +85,10 @@ a {
   padding: 5px;
   text-decoration: none;
   color: black !important;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
