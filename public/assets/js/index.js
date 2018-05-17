@@ -16,7 +16,6 @@ $(function() {
           }
         }
       }
-      console.log(isRepeat);
       if (isRepeat === false) {
         sortedArray.push(datapoint);
         acArray.push(datapoint);
@@ -54,7 +53,6 @@ $(function() {
 
     //integrate select2 autocomplete package with search bar
     $(".search_bar").select2({ data: searchArray });
-    console.log(searchArray);
   });
 
   //process search requests and redirect to search page
