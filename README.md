@@ -2,6 +2,8 @@
 
 Delta32 is a web application for viewing and uploading educational videos about medical, environmental and general health related topics. It is a fullstack project for accessing, viewing and recording videos.
 
+[Link to Demo](https://delta32.herokuapp.com/)
+
 ## Getting Started
 
 * Fork the repository and install packages with npm install.
