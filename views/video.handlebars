@@ -5,6 +5,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 <script type="text/javascript" src="/assets/js/index.js"></script>
 
+<script type="text/javascript" src="/assets/js/video_play.js"></script>
 <script type="text/javascript" src="/assets/js/dashboard.js"></script>
 
 <div class="no-gutter">
@@ -59,37 +60,40 @@
 
             <!-- VID HERE -->
 
+
+
+
+            {{#videos}}
             <div class="vid-card">
+                {{!--
+                <ziggeo id="video_player" ziggeo-width="560" ziggeo-height="315" ziggeo-playonclick="true" ziggeo-video="">
+                </ziggeo> --}}
 
-
-                {{#videos}}
-                <ziggeoplayer ziggeo-width="560" ziggeo-height="315" ziggeo-playonclick="true" ziggeo-video={{this.token}}>
-                    </ziggeo>
-
-                    <h1 class="vid-title" value={{this.token}}>{{this.title}}</h1>
-                    <h6 class="vid-desc">{{this.description}}</h6>
+                <h1 class="vid-title" value={{this.token}}>{{this.title}}</h1>
+                <h6 class="vid-desc">{{this.description}}</h6>
             </div>
             {{/videos}}
         </div>
+    </div>
 
-        <div class="col-sm-1"></div>
+    <div class="col-sm-1"></div>
 
-        <div class="col-sm-5">
-            <div class="side-card">
-                <div class="about">
-                    <!-- info about the doctor goes here -->
-                    <h3>Thanks To Our Contrubitor:</h3>
-                    <ul>
-                        {{#videos}}
-                        <li>{{Contributor.name}}</li>
-                        <li>{{Contributor.specality}}</li>
-                        {{/videos}}
-                    </ul>
-                </div>
-
+    <div class="col-sm-5">
+        <div class="side-card">
+            <div class="about">
+                <!-- info about the doctor goes here -->
+                <h3>Thanks To Our Contrubitor:</h3>
+                <ul>
+                    {{#videos}}
+                    <li>{{Contributor.name}}</li>
+                    <li>{{Contributor.specality}}</li>
+                    {{/videos}}
+                </ul>
             </div>
+
         </div>
     </div>
+</div>
 </div>
 
 
