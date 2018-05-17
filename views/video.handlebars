@@ -75,26 +75,32 @@
             </div>
             {{/videos}}
         </div>
-    </div>
 
-    <div class="col-sm-1"></div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4">
+            <div class="side-card">
+                <div class="about">
+                    <!-- info about the doctor goes here -->
+                    <h3>Thanks To Our Contrubitor:</h3>
+                    {{#if video.specality}}
+                    <ul>
+                        {{#videos}}
+                        <li>{{Contributor.title}} {{Contributor.name}}</li>
+                        <li>Specality: {{Contributor.specality}}</li>
+                        {{/videos}}
+                    </ul>
+                    {{else}}
+                    <ul>
+                        {{#videos}}
+                        <li>{{Contributor.title}} {{Contributor.name}}</li>
+                        {{/videos}}
+                    </ul>
+                    {{/if}}
+                </div>
 
-    <div class="col-sm-5">
-        <div class="side-card">
-            <div class="about">
-                <!-- info about the doctor goes here -->
-                <h3>Thanks To Our Contrubitor:</h3>
-                <ul>
-                    {{#videos}}
-                    <li>{{Contributor.name}}</li>
-                    <li>{{Contributor.specality}}</li>
-                    {{/videos}}
-                </ul>
             </div>
-
         </div>
     </div>
-</div>
 </div>
 
 
