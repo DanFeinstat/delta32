@@ -3,7 +3,7 @@
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-<script type="text/javascript" src="assets/js/index.js"></script>
+<script type="text/javascript" src="/assets/js/index.js"></script>
 
 <script type="text/javascript" src="/assets/js/dashboard.js"></script>
 
@@ -63,11 +63,11 @@
 
 
                 {{#videos}}
-                <ziggeo ziggeo-width="560" ziggeo-height="315" ziggeo-playonclick="true" ziggeo-video={{this.token}}>
-                </ziggeo>
+                <ziggeoplayer ziggeo-width="560" ziggeo-height="315" ziggeo-playonclick="true" ziggeo-video={{this.token}}>
+                    </ziggeo>
 
-                <h1 class="vid-title" value={{this.token}}>{{this.title}}</h1>
-                <h6 class="vid-desc">{{this.description}}</h6>
+                    <h1 class="vid-title" value={{this.token}}>{{this.title}}</h1>
+                    <h6 class="vid-desc">{{this.description}}</h6>
             </div>
             {{/videos}}
         </div>
