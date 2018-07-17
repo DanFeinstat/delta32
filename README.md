@@ -28,4 +28,4 @@ Delta32 is a web application for viewing and uploading educational videos about 
 * **Daniel Feinstat** - [DanFeinstat](https://github.com/DanFeinstat)
 * **Benjamin Dally** - [benjamindally](https://github.com/benjamindally)
 * **Ariel Solano** - [alyas94](https://github.com/alyas94)
-* **Gurnam Sunny** - [sunach](https://github.com/sunache)
+* **Gurnam Sunny** - [sunache](https://github.com/sunache)
